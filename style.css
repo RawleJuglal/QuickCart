@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+*,*::before, *::after{
+  box-sizing: border-box;
+}
+
+:root{
+  font-size:16px;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #EEF0F4;
+}
+
+.app{
+  display:flex;
+  flex-direction: column;
+  max-width:20em;
+  margin:8em auto;
+}
+
+.cat-img{
+  width:9.375em;
+  margin:0 auto;
+}
+
+.grocery-input,
+.btn{
+  border:none;
+  border-radius:.5em;
+  padding:.9375em;
+  font-family: 'Rubik', sans-serif;
+  font-size:1.25rem;
+  text-align:center;
+}
+
+.grocery-input {
+  margin:.625em 0;  
+  color: #432000;
+  background-color: #DCE1EB;
+}
+
+.addToList-btn{
+  color: #FDFDFD;
+  background-color: #AC485A;
+}
+
+.shopping-list{
+  list-style-type: none;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.625em;
+}
+
+.list-item{
+  font-size:1.25rem;
+  background-color: #FFFDF8;
+  padding: .9375em;
+  border-radius: .5em;
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0px .0625em .25em rgba(0, 0, 0, 0.2)
+}
