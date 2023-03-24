@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
 
 *,*::before, *::after{
   box-sizing: border-box;
@@ -11,8 +11,9 @@
 html,body{
   margin:0;
   padding:0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Kanit', sans-serif;
   background-color: #EEF0F4;
+  user-select: none;
 }
 
 .app{
@@ -22,9 +23,11 @@ html,body{
   margin:8em auto;
 }
 
-.cat-img{
+.bunny-img{
   width:9.375em;
   margin:0 auto;
+  border-radius:15px;
+  box-shadow: 0px 7px 12px 0px #303030;
 }
 
 .grocery-input,
@@ -32,20 +35,33 @@ html,body{
   border:none;
   border-radius:.5em;
   padding:.9375em;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size:1.25rem;
   text-align:center;
 }
 
+
+
 .grocery-input {
   margin:.625em 0;  
-  color: #432000;
+  color:#4e315f;
   background-color: #DCE1EB;
+}
+
+.grocery-input::placeholder{
+  color:#4e315f;
 }
 
 .addToList-btn{
   color: #FDFDFD;
-  background-color: #AC485A;
+  background-color: #BDE0FE;
+  transition: background-color .5s ease;
+}
+
+.addToList-btn:hover{
+  background-color:#4e315f;
+  transition: background-color .5s ease;
+  cursor: pointer;
 }
 
 .shopping-list{
@@ -58,10 +74,23 @@ html,body{
 
 .list-item{
   font-size:1.25rem;
-  background-color: #FFFDF8;
+  background-color: #FFC8DD;
+  color:#4e315f;
   padding: .9375em;
   border-radius: .5em;
   flex-grow: 1;
   text-align: center;
-  box-shadow: 0px .0625em .25em rgba(0, 0, 0, 0.2)
+  box-shadow: 0px .0625em .25em rgba(0, 0, 0, 0.2);
+  transition:background-color .5s ease;
+}
+
+.list-item:hover{
+  background-color:#FFAFCC;
+  transition:background-color .5s ease;
+  cursor: pointer;
+}
+
+footer{
+  display:flex;
+  justify-content: center;
 }
