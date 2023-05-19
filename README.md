@@ -1,4 +1,5 @@
-# Quick Cart **Archived**
+**Archived May 19,2023**
+# Quick Cart 
 Welcome to Quick Cart! This is a project built by **[Rafid Hoda](https://twitter.com/rafidhoda)** and taught in his **[Build a Mobile App with Firebase](https://scrimba.com/learn/firebase)** course.
 
 ## Installation
